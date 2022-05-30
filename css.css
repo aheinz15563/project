@@ -6,7 +6,7 @@
 
 body{
 
-    background-image: url(./15-CSS-Animated-Backgrounds-Pintire.gif);
+    background-image: url(./images/background.gif);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -87,13 +87,21 @@ header{
     margin-left: 0px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
+
+.menu-image{
+
+    display: none;
 }
 
 /* MAIN INFORMATION */
 
 main{
 
+    margin: 120px 30px 120px 30px;
     display: grid;
     grid-template-columns: auto auto;
     gap: 10%;
@@ -197,5 +205,73 @@ footer{
 .copyright{
 
     margin-bottom: 16px;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+
+    main{
+
+        grid-template-columns: auto;
     
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    main{
+
+        margin: 0px;
+        padding: 0px;   
+        gap: 2%;
+     
+    
+    }
+
+    .container-secondary{
+
+        gap: 4%;
+
+
+    }
+
+    section{
+
+        margin: 0px;
+
+    }
+
+    header{
+
+        margin-bottom: 0px;
+    }
+
+    .header-ul{
+
+        display: none;
+    }
+
+
+    nav{
+
+        display: flex;
+        justify-content: right;
+
+    }
+    .menu-image{
+
+        display:block;
+        width: 75px;
+
+    }
+
+    footer{
+
+        margin-top: 9%;
+    }
+
+
 }
