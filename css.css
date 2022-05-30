@@ -1,5 +1,9 @@
 /* GENERAL */
 
+* {
+    font-family:sans-serif
+  }
+
 body{
 
     background-image: url(./15-CSS-Animated-Backgrounds-Pintire.gif);
@@ -45,7 +49,6 @@ h1{
 header, footer{
 
     padding: 1%;
-    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -56,6 +59,7 @@ header, footer{
 header{
 
     margin-bottom: 2%;
+    background: rgba(0, 0, 0, 1);
     position: sticky;
     top: 0px;
     z-index:1;
@@ -121,7 +125,7 @@ main{
 
 section{
 
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -156,17 +160,42 @@ section:hover{
 
 }
 
-/* FOOTER */
 
-footer{
-    margin-top: 2%;
 
-    padding: 1%;
+table{
+
+    margin-top: 16px;
+    border-collapse: collapse;
+    width: 100%;
     
 }
 
-.ul-footer{
-    display: flex;
-    gap: 40px;
-    justify-content: space-evenly;
+tbody td {
+    text-align: center;
+  }
+
+/* FOOTER */
+
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 2%;
+    font-size: 0.8rem;
+    padding: 2%;
+
+    
+}
+
+.footer-container{
+
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+.copyright{
+
+    margin-bottom: 16px;
+    
 }
