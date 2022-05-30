@@ -78,7 +78,7 @@ header{
     font-size: 1.2rem;
     margin-right: 10%;
     
-    }
+}
 
 .header-ul{
 
@@ -134,14 +134,17 @@ main{
 section{
 
     background: rgba(0, 0, 0, 0.6);
+
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     padding: 4%;
-    margin-bottom: 2%;
-    margin: 1%;
+    margin: 1% 1% 2% 1%;
+
     opacity: 0.5;
     transition: 1s;
 
@@ -161,13 +164,13 @@ section:hover{
     width: 250px;
 
     border-radius: 50%;
+    border: 2px solid rgba(255, 0, 183, 0.093);
+
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border: 2px solid rgba(255, 0, 183, 0.093);
 
 }
-
 
 
 table{
@@ -222,27 +225,8 @@ footer{
 
 @media (max-width: 800px) {
 
-    main{
 
-        margin: 0px;
-        padding: 0px;   
-        gap: 2%;
-     
-    
-    }
-
-    .container-secondary{
-
-        gap: 4%;
-
-
-    }
-
-    section{
-
-        margin: 0px;
-
-    }
+    /* HEADER */
 
     header{
 
@@ -264,13 +248,39 @@ footer{
     .menu-image{
 
         display:block;
-        width: 75px;
+        width: 65px;
 
     }
 
-    footer{
+    /* MAIN */
 
-        margin-top: 9%;
+    main{
+
+        gap: 1%;
+        margin: 0px 0px 60px 0px;
+    
+    }
+
+    .sub-container-main{
+
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+
+    .container-secondary{
+
+        gap: 4%;
+
+
+    }
+
+    section{
+
+        margin: 0px;
+        opacity: 1;
+
+
     }
 
 
