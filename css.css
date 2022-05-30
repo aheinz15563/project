@@ -243,6 +243,7 @@ footer{
 
         display: flex;
         justify-content: right;
+        gap: 20px;
 
     }
     .menu-image{
@@ -257,7 +258,8 @@ footer{
     main{
 
         gap: 1%;
-        margin: 0px 0px 60px 0px;
+        margin: 0px 0px 120px 0px;
+        text-align: center;
     
     }
 
@@ -271,6 +273,7 @@ footer{
     .container-secondary{
 
         gap: 4%;
+
 
 
     }
