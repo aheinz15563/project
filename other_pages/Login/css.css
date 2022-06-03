@@ -6,7 +6,7 @@
 
 body{
 
-    background-image: url(./images/background.gif);
+    background-image: url(../../images/background.gif);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -40,6 +40,25 @@ h1{
     margin:0px;
     padding:0px;
 }
+
+form{
+
+    display: grid;
+    justify-content: space-around;
+}
+
+.login-link{
+
+    color: black;
+
+}
+
+input{
+
+    margin-bottom: 40px;
+}
+
+
 
 
 
@@ -86,7 +105,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
 
 }
 
@@ -99,33 +117,18 @@ header{
 
 main{
 
-    margin: 6% 30px 6% 30px;
+    margin: 120px 30px 120px 30px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 10%;
 
 }
 
 .container-main{
 
-    display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: center;
 
-}
-
-.sub-container-main{
-
-    display: grid;
-    grid-template-columns: auto auto;
-
-}
-
-.container-secondary{
-
-    display: grid;
-    align-items: center;
-
-    
 }
 
 
@@ -145,6 +148,7 @@ section{
 
     opacity: 0.5;
     transition: 1s;
+    font-size: 2rem;
 
 }
 
@@ -156,32 +160,17 @@ section:hover{
 
 }
 
+.register{
 
-.img-datos-personales{
-
-    width: 250px;
-
-    border-radius: 50%;
-    border: 2px solid rgba(255, 0, 183, 0.093);
-
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-
+    padding: 20px;
+    background-color: black;
+    margin-top: 4%;
 }
 
+article{
 
-table{
-
-    margin-top: 16px;
-    border-collapse: collapse;
-    width: 100%;
-    
+    display: grid;
 }
-
-tbody td {
-    text-align: center;
-  }
 
 /* FOOTER */
 
@@ -216,9 +205,6 @@ footer{
     main{
 
         grid-template-columns: auto;
-        margin: 6% 30px 15% 30px;
-
-        
     
     }
 
@@ -259,7 +245,7 @@ footer{
     main{
 
         gap: 1%;
-        margin: 0% 0% 60px 0%;
+        margin: 120px 0px 120px 0px;
         text-align: center;
     
     }
@@ -269,14 +255,6 @@ footer{
         display: grid;
         grid-template-columns: auto;
     
-    }
-
-    .container-secondary{
-
-        gap: 4%;
-
-
-
     }
 
     section{
